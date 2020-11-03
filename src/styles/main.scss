@@ -1,0 +1,20 @@
+@import 'config';
+
+body {
+  background: $background-color;
+  color: $default-font-color;
+}
+
+.logo{
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid red;
+  &__image {
+    border: 1px solid green;
+  }
+  &__text {
+    border: 1px solid blue;
+  }
+}

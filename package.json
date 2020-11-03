@@ -1,0 +1,22 @@
+{
+  "name": "cm-expert-test",
+  "version": "1.0.0",
+  "description": "Frontend test to CM Expert company",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp"
+  },
+  "author": "Alexander Smirnov <alex-wd@yandex.ru>",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.1.0"
+  },
+  "dependencies": {
+    "reset-css": "^5.0.1"
+  }
+}
