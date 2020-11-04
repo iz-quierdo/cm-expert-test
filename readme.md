@@ -24,6 +24,6 @@ To run application in browser type following command in terminal:
 $ gulp
 ```
 
-or run npm script via your IDE
+or run npm script "build" via your IDE
 
 The local server will run on: http://localhost:3000
