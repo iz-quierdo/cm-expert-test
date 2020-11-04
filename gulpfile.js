@@ -1,7 +1,7 @@
-var gulp = require('gulp');
 var srcDirectory = './src';
 
 // Modules
+var gulp = require('gulp');
 var src = gulp.src;
 var dest = gulp.dest;
 var parallel = gulp.parallel;
