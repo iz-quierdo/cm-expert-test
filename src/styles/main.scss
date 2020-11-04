@@ -25,7 +25,7 @@ body {
   }
 
   &__text {
-    font-family: 'Poppins', sans-serif;
+    font-family: $title-logo-font, sans-serif;
     text-transform: uppercase;
     font-size: 62px;
     letter-spacing: 4px;
@@ -34,13 +34,13 @@ body {
   }
 
   &__line-2 {
-    margin-top: 8px;
     color: $logo-blue;
+    margin-top: 8px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     &__subtitle {
-      font-family: 'Open Sans', sans-serif;
+      font-family: $subtitle-logo-font, sans-serif;
       color: $logo-dark;
       font-size: 22px;
       letter-spacing: -0.5px;
@@ -91,10 +91,10 @@ body {
     }
   }
   &__circle-2 {
+    background: $logo-white;
     position: absolute;
     top: 40px;
     left: 40px;
-    background: $logo-white;
     width: 120px;
     height: 120px;
     z-index: 10;
@@ -121,6 +121,6 @@ body {
   }
 }
 
-.oswald {
-  font-family: Oswald, sans-serif;
+.square-dot {
+  font-family: $square-dot-font, sans-serif;
 }
