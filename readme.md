@@ -10,6 +10,12 @@ To install application with all dependencies run:
 $ npm install
 ```
 
+In some cases it is necessary to install gulp globally
+
+```
+$ npm install -g gulp
+```
+
 ## 2. App running
 
 To run application in browser type following command in terminal:
