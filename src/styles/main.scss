@@ -1,11 +1,11 @@
-@import 'config';
+@import "config";
 
 body {
   background: $background-color;
   color: $default-font-color;
 }
 
-.logo{
+.logo {
   width: 400px;
   display: flex;
   justify-content: space-between;
