@@ -1,7 +1,13 @@
-// USER VARIABLES SECTION
+// Background colors
+$body-background: #fff;
 
-$body-background-color: #fff; // Page background
-$default-font-color: #333; // Page font color
+// Logo colors
+$logo-dark: #261f0f;
+$logo-blue: #00adff;
+$logo-white: #fff;
 
-// IMPORT SECTION
+// Font colors
+$default-font: #333;
+
+// Import section
 @import 'node_modules/reset-css/sass/reset'; // Classical reset.css

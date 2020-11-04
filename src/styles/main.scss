@@ -1,28 +1,58 @@
 @import 'config';
 
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
-  background: $body-background-color;
-  color: $default-font-color;
+  background: $body-background;
+  color: $default-font;
 }
 
 .logo {
-  width: 400px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  border: 1px solid red;
 
   &__image {
-    border: 1px solid red;
+    height: 200px;
+    margin-right: 220px;
   }
 
   &__text {
-    border: 1px solid blue;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 62px;
+    letter-spacing: 4px;
+    font-weight: 600;
+    color: $logo-dark;
+  }
+
+  &__line-2 {
+    margin-top: 8px;
+    color: $logo-blue;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    &__subtitle {
+      font-family: 'Open Sans', sans-serif;
+      color: $logo-dark;
+      font-size: 22px;
+      letter-spacing: -0.5px;
+      line-height: 27px;
+      margin-left: 2px;
+    }
   }
 }
 
 .circles {
   position: relative;
+
   &__circle {
     position: absolute;
     top: 50%;
@@ -30,13 +60,16 @@ body {
     overflow: hidden;
     border-radius: 100%;
   }
+
   &__circle-1 {
+    background: linear-gradient(to right, $logo-dark 91%, $logo-white 91%);
     position: absolute;
     top: 50%;
     left: 50%;
-    background: #000;
     width: 200px;
     height: 200px;
+    z-index: 2;
+
     &__item {
       overflow: hidden;
       position: absolute;
@@ -46,42 +79,48 @@ body {
     }
 
     &__item-1 {
-      background: #fff;
-      z-index: 1;
-      transform: rotate(150deg);
+      background: $logo-white;
+      z-index: 4;
+      transform: rotate(145deg);
     }
 
     &__item-2 {
-      background: #000;
-      z-index: 2;
-      transform: rotate(210deg);
+      background: $logo-dark;
+      z-index: 6;
+      transform: rotate(215deg);
     }
   }
   &__circle-2 {
     position: absolute;
-    top: 50px;
-    left: 50px;
-    background: #fff;
-    width: 100px;
-    height: 100px;
+    top: 40px;
+    left: 40px;
+    background: $logo-white;
+    width: 120px;
+    height: 120px;
+    z-index: 10;
+
     &__item {
       overflow: hidden;
       position: absolute;
-      width: 50px;
-      height: 50px;
+      width: 60px;
+      height: 60px;
       transform-origin: 100% 100%;
     }
 
     &__item-1 {
-      background: blue;
-      z-index: 5;
-      transform: rotate(150deg);
+      background: $logo-blue;
+      z-index: 12;
+      transform: rotate(145deg);
     }
 
     &__item-2 {
-      background: #fff;
-      z-index: 7;
-      transform: rotate(210deg);
+      background: $logo-white;
+      z-index: 14;
+      transform: rotate(215deg);
     }
   }
+}
+
+.oswald {
+  font-family: Oswald, sans-serif;
 }
