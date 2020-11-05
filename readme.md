@@ -27,3 +27,4 @@ $ gulp
 or run npm script "build" via your IDE
 
 The local server will run on: http://localhost:3000
+It uses /build/ directory as it's base
